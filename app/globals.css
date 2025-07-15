@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --text-color: #2E2E2E;
+  --text-secondary-color: gray;
+  --accent-color: #EDF6FF;
+  --primary-color: #5B8DEF;
+  --hover-color: #4178DC;
+  --header-bg-color: #E1EDEB;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body{
+  color: #2E2E2E;
+  font-family:"Inter", sans-serif;
+  background-color: #ffffff;
+}
+
+.custom-form-card {
+  clip-path: polygon(15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%, 0% 15%);
+}
+
+.custom-form-prefooter {
+  clip-path: polygon(0% 0%, 60% 0%, 70% 20%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.background-water-drop {
+  background: url("../public/images/features/water-drop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@theme {
+  --breakpoint-tablet: 769px;
+  --breakpoint-screen-960: 960px;
+  --breakpoint-screen-1024: 1024px;
+  --breakpoint-screen-1120: 1120px;
+  --breakpoint-screen-1200: 1200px;
+  --breakpoint-screen-1440: 1440px;
+  --breakpoint-screen-1360: 1360px;
+  --breakpoint-screen-480: 480px;
+  --breakpoint-screen-640: 640px;
+  --breakpoint-screen-350: 350px;
+}
+
+@theme {
+  --animate-carrousel: carrousel 25s linear infinite;
+
+  @keyframes carrousel {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-2125px);
+    }
+  }
+}
