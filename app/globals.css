@@ -8,6 +8,7 @@
   --primary-color: #5B8DEF;
   --hover-color: #4178DC;
   --header-bg-color: #E1EDEB;
+  --red-color: #EF4444;
 }
 
 *, ::before, ::after {
@@ -58,4 +59,8 @@ body{
       transform: translateX(-2125px);
     }
   }
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }

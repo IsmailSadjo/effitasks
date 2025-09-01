@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function FeatureCard({item}) {
     return (
-        <div className="grid grid-cols-3 gap-8">
-            <div className={`col-span-2 p-4 rounded-4xl flex justify-center items-center background-water-drop ${item.index === 0 || item.index === 2 ? "order-2" : ""}`}>
-                <div className="rounded-4xl">
-                    <Image src={item.image} alt='illustration' className="w-full h-full object-contain" />
+        <div className="grid grid-cols-3 gap-20">
+            <div className={`col-span-2 p-2 rounded-[38px] flex justify-center items-center background-water-drop ${item.index === 0 || item.index === 2 ? "order-2" : ""}`}>
+                <div className="rounded-4xl w-full overflow-hidden">
+                    <Image src={item.image} alt='illustration' className="w-full h-full object-contain" loading="lazy"/>
                 </div>
             </div>
             <div className={`flex flex-col justify-center items-start gap-6 ${item.index === 0 || item.index === 2 ? "order-1" : ""}`}>

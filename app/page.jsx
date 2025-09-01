@@ -5,17 +5,21 @@ import Carrousel from "@/components/home/Carrousel";
 import Footer from "@/components/home/Footer";
 import Testimonials from "@/components/home/Testimonials";
 import Prefooter from "@/components/home/Prefooter";
+import { auth } from "@/auth";
 
-export default function Home() {
+export default async function Home() {
+
+  const session = await auth();
+
   return (
     <>
-      <Header />
+      <Header session={session}/>
       <Hero />
       <Features />
-      <Testimonials />
-      <Prefooter/>
+      {/* <Testimonials /> */}
+      {/* <Prefooter/> */}
       {/* <Carrousel /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

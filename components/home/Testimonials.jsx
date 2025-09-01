@@ -31,7 +31,7 @@ export default function Testimonials() {
 
     return (
         <div className="mx-auto mt-[200px] screen-960:max-w-[1024px] screen-1200:max-w-[1440px] tablet:max-w-[720px] overflow-hidden mb-[96px] flex flex-col justify-center items-start gap-16 p-2">
-            <h2 className="font-bold text-5xl tracking-tight leading-tight text-center px-12 w-full">Ce que nos utilisateurs disent de nous</h2>
+            <h2 className="font-bold text-5xl tracking-tight leading-tight text-center w-full px-12 max-screen-960:px-2 max-screen-960:text-4xl max-tablet:text-3xl">Ce que nos utilisateurs disent de nous</h2>
             <div className="flex justify-center items-center mx-auto gap-2">
                 <button className="text-[var(--primary-color)] w-10 h-10 mr-1 cursor-pointer hover:scale-95">
                     <FaArrowAltCircleLeft className="w-full h-full" onClick={scrollLeft}/>

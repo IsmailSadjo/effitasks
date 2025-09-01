@@ -1,5 +1,6 @@
-import image1 from "../../../public/images/features/add-tasks.png"
+import image1 from "../../../public/images/features/ajouter-tache.png"
 import image2 from "../../../public/images/features/modify.png"
+import image4 from "../../../public/images/features/calendrier-test.png"
 // import image3 from "../../../public/images/features/search.png"
 // import image4 from "../../../public/images/features/calendar-view.png"
 import { BsPencil } from 'react-icons/bs';
@@ -34,7 +35,7 @@ export const data = [
         index: 3,
         title: "Vue calendrier",
         desc: "Visualisez vos tâches autrement grâce à la vue calendrier d'EFFITASKS. En un clin d'œil, organisez votre semaine ou votre mois et repérez les journées chargées. Cette vue vous offre une meilleure perspective sur votre planning et facilite la planification à long terme.",
-        image: image2,
+        image: image4,
         icon: <FaRegCalendarAlt />
     }
 ]
